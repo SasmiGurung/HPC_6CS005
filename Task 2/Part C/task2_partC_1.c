@@ -69,7 +69,8 @@ void crack(char *salt_and_encrypted){
         enc = (char *) crypt(plain, salt);
         count++;
         if(strcmp(salt_and_encrypted, enc) == 0){
-          //return; // stop when found the wright password without exploring all possibilities
+          printf("#%-8d%s %s\n", count, plain, enc);
+          return; // stop when found the wright password without exploring all possibilities
         } else {
           printf(" %-8d%s %s\n", count, plain, enc);
         }
