@@ -33,14 +33,6 @@ int n_passwords = 1;
 
 char *encrypted_passwords[] = {
   "$6$AS$9IwGTn5WbHSalUs4ba3JbOfOUX/v1yD71Z4M2F6Yusz5k2WQEOFxqLIY80tudGtcFttqr/Zq6RIPjHkl/t2Pp1"
-
-// "$6$KB$5B3KGhhav2/OsufUGxdicHWDBJM7ojVt0DvSVVwcpHL2OiiiBnq.b6hHZ/uYsi9PETZ6XDOW9/xOOrcbIXcfE/",
-
-// "$6$KB$1vCJQRsKAizZvuTjEqLE./zeAqZ7AdqzTdx5Tob.bQDRGlXOEVkNhuqMorBSvCp4fP0eoNm2wULs3DRABbrLQ/",
-
-// "$6$KB$F1y/Jfx/DeNeEL7YbiYjdZoJsNCQ.6RYAe4U3ucZPHNGfSjaFd1.f9fLOkbQ6mq/IhbuFOuPs74HgnfZBMhjV/",
-
-// "$6$KB$3DdCMYkSjEZX4kRXiSK2ZW9XksbV7j162Eg6xOlzC3C7qxRIAetCB6Sm7m4soWwVc7hmnYXDNtDoxlfD.2LPa0"
 };
 
 /**
@@ -85,6 +77,7 @@ void *kernel_function_1(void *salt_and_encrypted){
         count++;
         if(strcmp(salt_and_encrypted, enc) == 0){
           printf("#%-8d%s %s\n", count, plain, enc);
+          //return; // stop when found the wright password without exploring all possibilities
         } else {
           printf(" %-8d%s %s\n", count, plain, enc);
        }
