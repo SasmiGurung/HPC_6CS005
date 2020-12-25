@@ -1,0 +1,3 @@
+#1234118 SGR17 $6$AS$UbsD7JKRvnVuBDoz1BceerHJ/JbBR89h4Gm2OejQfF57TEq.1Pni/fKB/IcykeBxtJastdGtuVLA/wlRFnJD/0
+1757600 solutions explored
+Time elapsed was 5749791459935ns or 5749.791459935s
