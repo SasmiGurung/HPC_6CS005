@@ -14,12 +14,12 @@
 
   To run:
   
-    ./task3_partA_1
+    ./task3_partA_1 "password"
 
   If you want to analyse the results then use the redirection operator to send
   output to a file that you can be viewed using an editor
 
-    ./task3_partA_1 > task3_partA_1_results.txt
+    ./task3_partA_1 "password" > task3_partA_1_results.txt
 
   Author: Sasmita Gurung 
   University Email: S.Gurung12@wlv.ac.uk
