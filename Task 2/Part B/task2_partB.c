@@ -25,7 +25,7 @@
   If you want to analyse the results then use the redirection operator to send
   output to a file that you can be viewed using an editor
 
-    ./task2_partB  > task2_partB results.txt
+    ./task2_partB  > task2_partB_results.txt
 
   Author: Sasmita Gurung 
   University Email: S.Gurung12@wlv.ac.uk
