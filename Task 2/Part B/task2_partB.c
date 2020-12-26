@@ -20,7 +20,7 @@
 
   To run:
 
-    ./task2_partC_5 
+    ./task2_partB
 
   If you want to analyse the results then use the redirection operator to send
   output to a file that you can be viewed using an editor
